@@ -1,0 +1,80 @@
+to print in rows and column 
+
+base 1
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n;column++)
+      printf("*");
+    }
+}
+
+base 2
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<=row;column++)
+      printf("* ");
+    }
+}
+
+base 3
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n-row;column++)
+      printf("* ");
+    }
+}
+
+base 4
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<2*row-1;column++)
+      printf("* ");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
