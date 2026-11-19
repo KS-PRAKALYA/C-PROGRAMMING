@@ -265,7 +265,6 @@ int main(){
     printf("%d",c);
 }
 
-
 //to find the sum of a number like if 123 sum is 6 
 
 #include<stdio.h>
