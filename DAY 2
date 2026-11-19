@@ -14,6 +14,7 @@ int main()
     printf("not equal");
 }
 
+
 // write a c programm to check the number is +ive or -ive or 0
 // I/P              O/P 
 // 12               NUMBER IS 12 : POSITIVE
