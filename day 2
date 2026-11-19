@@ -1,0 +1,282 @@
+// two numbers are equal or not
+// I/P       O/P 
+// 2 2     EQUAL 
+// 2 4     NOT EQUAL
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a=b)
+    printf("equal");
+    else
+    printf("not equal");
+}
+
+// write a c programm to check the number is +ive or -ive or 0
+// I/P              O/P 
+// 12               NUMBER IS 12 : POSITIVE
+// -9               NUMBER IS -9 : NEGATIVE
+// 0                NUMBER IS  0 : ZERO
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a>0)
+    printf("number is %d:positive",a);
+    else if(a<0)
+    printf("number is %d:negative",a);
+    else
+    printf("number is %d:zero",a);
+    
+}
+
+// greatest of two numbers
+// I/P           O/P 
+// 12 3          GREATER IS = 12
+// 3  0          GREATER IS = 3 
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if (a>b)
+    printf("greater is =%d",a);
+    else
+    printf("greater is =%d",b);
+    
+}
+
+
+// greatest of two numbers
+// I/P           O/P 
+// 12 3  7        GREATER IS = 12
+// 3  0  2        GREATER IS = 3 
+
+#include<stdio.h>
+int main(){
+     int a,b,c;
+     scanf("%d %d %d",&a,&b,&c);
+     if (a>b&&a>c)
+     printf("greater is =%d",a);
+     else if (b>c)
+     printf("greater is =%d",b);
+     else
+     printf("greater is =%d",c);
+    
+ }
+
+// i/p              o/p 
+// 18             Divisible by 3
+// 22             Not Divisible by 3 and Remainder is 1
+
+#include<stdio.h>
+int main(){
+int a;
+scanf("%d",&a);
+if(a%3==0)
+printf("Divisible by 3");
+else
+printf("Not Divisible by 3 and the remainder is %d",a%3);
+}
+
+
+// find the given number is odd or even
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%2==0)
+    printf("even");
+    else
+    printf("odd");
+}
+
+// to find the leap year
+
+#include<stdio.h>
+ int main(){
+     int year;
+     scanf("%d",&year);
+     if((year%400==0)||(year%4==0&&year%100!=0))
+     printf("%d is a leap year",year);
+     else
+     printf("%d is not a leap year",year);
+}
+
+
+
+// if the number is divisible by
+// condition   o/p    i/p
+// 3 and 5    hi hlo   15
+// 3          hi        3
+// 5          hlo      20
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if(a%3==0&&a%5==0)
+    printf("hi hello");
+    else if (a%3==0)
+    printf("hi");
+    else if (a%5==0)
+    printf("hello");
+    else
+    printf("invalid");
+}
+
+//------------by using 2 condition also which gives 3 answer:
+
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    if (a%3==0)
+    printf("hi");
+    if (a%5==0)
+    printf("hello");
+}
+
+//--------------c program to print n natural numbers
+
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    scanf("%d",&n);
+    for(i=-100;i<=n;i++)
+    printf("%d\n",i);
+}
+
+// to find the sum of n numbers
+// get starting and ending range from user
+
+#include<stdio.h>
+int main()
+{
+    int i,n,sum=0;
+    scanf("%d %d",&i,&n);
+    for(i;i<=n;i++)
+    sum=sum+i;
+    printf("%d",sum);
+}
+
+
+// to find the factoral of n numbers
+// get ending range from user
+
+#include<stdio.h>
+int main()
+{
+    int i,n,fact=1;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    fact=fact*i;
+    printf("%d",fact);
+}
+
+//‐---------to find factoral
+
+#include<stdio.h>
+int main() 
+{
+    int i,n;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {if (n%i==0)
+    printf("%d ",i);}
+}
+
+
+#include<stdio.h>
+int main() 
+{
+  int i,n;
+  scanf("%d",&n);
+    for(i=1;i<=n/2;i++)
+    {if (n%i==0)
+    printf("%d ",i);}
+     printf("%d ",n);
+}
+
+
+//i/p          o/p
+//2  4         1*2=2 
+//             2*2=4
+//             3*2=6
+//             4*2=6
+//
+//              i*t
+
+
+
+#include<stdio.h>
+int main()
+{
+  int i,n,t;
+  scanf("%d %d",&n,&t);
+    for(i=1;i<=n;i++)
+    printf("%d * %d = %d\n",i,t,i*t);
+}
+
+
+
+// to get prime number 
+
+
+#include<stdio.h>
+int main()
+{
+  int i,n,c=0;
+  scanf("%d",&n);
+ if(n==1)
+  {
+      printf("neither prime nor composite number");
+      return 0;
+  }
+  for(i=2;i<=n/2;i++)
+    {
+        if(n%2==0)
+        {c++;
+        printf("not a prime number");
+        break;
+    }
+    }
+    if(c==0)
+    printf("prime number");
+}
+
+
+//count the number of digits
+
+#include<stdio.h>
+int main(){
+    int n,c=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        n=n/10;
+        c++;
+    }
+    printf("%d",c);
+}
+
+
+//to find the sum of a number like if 123 sum is 6 
+
+#include<stdio.h>
+int main(){
+    int n,sum=0,d;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        d=n%10;
+        sum=sum+d;
+        n=n/10;
+    }
+    printf("%d",sum);
+}
