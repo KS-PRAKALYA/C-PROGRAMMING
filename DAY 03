@@ -1,0 +1,151 @@
+// base 1 number printing concepts
+
+// 12345
+// 12345
+// 12345
+// 12345
+// 12345
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n;column++)
+      printf("%d",column+1);
+    }
+}
+
+// 1
+// 12 
+// 123 
+// 1234
+// 12345 
+
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<=row;column++)
+      printf("%d",column+1);
+    }
+ }
+
+// 54321
+// 5432 
+// 543 
+// 54 
+// 5 
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n-row;column++)
+      printf("%d",n-column);
+    }
+}
+
+
+// 12345
+// 1234
+// 123
+// 12
+// 1 
+
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n-row;column++)
+      printf("%d",column+1);
+    }
+}
+
+// 1
+// 23 
+// 456 
+// 78910 
+// 1112131415
+
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column,d=1;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<=row;column++)
+      printf("%d ",d++);
+    }
+}
+
+
+// 1  2  3  4  5
+// 6  7  8  9  10 
+// 11 12 13 14 15 
+// 16 17 18 19 20 
+// 21 22 23 24 25
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column,d=1;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n;column++)
+      printf("%d ",d++);
+    }
+}
+
+
+// 1 
+// 22
+// 333
+// 4444
+// 55555
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<=row;column++)
+      printf("%d ",row+1);
+    }
+}
+
+// 01 02 03 04 05
+// 06 07 08 09 10 
+// 11 12 13 14 15 
+// 16 17 18 19 20 
+// 21 22 23 24 25
+
+#include<stdio.h>
+int main()
+{
+    int n,row,column,d=1;
+    scanf("%d",&n);
+    for(row=0;row<n;row++,printf("\n"))
+    {
+      for(column=0;column<n;column++)
+      printf("%02d ",d++);
+    }
+}
