@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{  
+    int a,b,sum=0;
+    scanf("%d %d",&a,&b);
+    sum=a+b;
+    printf("sum:%d",sum);
+    
+}
+
+#include<stdio.h>
+int main()
+{
+    printf("//n");
+    printf("%%%%");
+    printf("slow and \"steady\" wins the race");
+    printf("PRAKALYA");
+}
+
+
+//write a c program to unit digit of the given number;
+//input   output
+//1234     4
+//256      6 
+
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    b=a%10;
+    printf("%d",b);
+}
+
