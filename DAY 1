@@ -32,3 +32,52 @@ int main()
     printf("%d",b);
 }
 
+#include <stdio.h>
+int main() 
+{ int a ;
+scanf ("%d",&a);
+printf("%d",a);
+}
+
+// two numbers are equal or not
+// i/p               o/p
+// 2 2               Equal
+// 2 4               Not Equal
+#include <stdio.h>
+int main()
+{	int a,b;
+	scanf("%d%d",&a,&b);
+	if (a==b)
+		printf("Equal");
+	else
+		printf("Not Equal");
+} 
+
+// // #include <stdio.h>
+// // int main()
+// // { float a;
+// // scanf ("%f",&a);
+// // printf("%.2f",a);
+// // }
+
+// #include <stdio.h>
+// int main()
+// { char a ;
+// scanf("%c",&a);
+// printf("%c",a);
+// }
+
+// #include <stdio.h>
+// int main()
+// { printf("PRAKALYA KS");
+// }
+
+// #include <stdio.h>
+// int main()
+// { printf("slow and \"steady\" wins the race"); 
+// }
+
+// #include <stdio.h>
+// int main()
+// { printf("\\n");
+// }
